@@ -1,0 +1,140 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        clear: both;
+        font-family: 'Open Sans', sans-serif;
+        margin: 25px 0 50px 0;
+        overflow: auto;
+    }
+
+    div {
+        height: 300px;
+        width: 100%;
+    }
+
+    header {
+        border-bottom: 5px solid #7d97ad;
+        display: inline-block;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    header > img {
+        float: left;
+    }
+
+    header > section {
+        float: right;
+        text-align: right;
+    }
+
+    header > section > h1 {
+        font-size: 350%;
+    }
+
+    header > section > h1, h3 {
+        font-weight: inherit !important;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;                
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .main-img {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .t-box {
+        color: grey;
+        height: auto;
+        padding: 0 0 15px 10px;
+    }
+
+    .box {
+        width: calc((100% - (2 * 25px)) / 3);
+    }
+
+    @media screen and (min-width: 650px) {
+        .box:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+
+    .box > * {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box > img {
+        height: 170px;
+        padding-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .box h1 {
+        text-transform: uppercase;;
+    }
+
+    a, a:before, a:after, a:visited {
+        color: darkslategray;
+        text-decoration: none !important;
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .main-img {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .t-box {
+            padding: 25px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .box {
+            display: block;
+            margin: 5px auto;
+            width: 100%;
+        }
+
+        .box > img {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .box p {
+    /*                    text-decoration: underline;*/
+        }
+
+        .box a {
+    /*                    color: grey;*/
+        }
+
+        header > section {
+            padding: 0 25px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .main-img {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        .box p {
+            padding: 0 15px;
+        }
+    }   
